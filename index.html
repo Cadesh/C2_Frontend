@@ -61,7 +61,7 @@
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent("Coord: " + e.latlng.toString())
+			.setContent("coord: " + e.latlng.toString())
 			.openOn(mymap);
 	}
 
@@ -77,7 +77,7 @@
 		[43.683, -79.416],
 		[43.681, -79.424],
 		[43.681, -79.432]
-	   ]).addTo(mymap).bindPopup("polygon.");
+	   ]).addTo(mymap).bindPopup("polygon");
 	}
 
 	function drawCircle() {
@@ -85,7 +85,7 @@
 			color: 'red',
 			fillColor: '#f03',
 			fillOpacity: 0.5
-		}).addTo(mymap).bindPopup("circle.");
+		}).addTo(mymap).bindPopup("circle");
 	}
 
   function createIcon () {
